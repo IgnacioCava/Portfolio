@@ -5,9 +5,9 @@ import user from '../Props/anon.png'
 export default function MyResume(){
 
     return(
-        <MySelf>
+        <MySelf id='myresume'>
             <Contact>
-                <h1>Ignacio Cava</h1>
+                <h1>RESUME</h1>
                 <h5 className="carreer">PERN Stack</h5>
                 <h5 className="carreer">Web Developer</h5>
                 <Media>

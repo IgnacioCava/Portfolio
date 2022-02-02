@@ -8,11 +8,11 @@ import MyProjects from "./VerticalPages/MyProjects"
 export default function Vertical(){
 
     return(
-        <VerticalScale>
+        <VerticalScale id='vertical'>
             <AboutMe/>
             <MyResume/>
-            <MyContact/>
             <MyProjects/>
+            <MyContact/>    
         </VerticalScale>
     )
 }
@@ -23,7 +23,8 @@ const VerticalScale = styled.div`
     width:35%;
     top:-7.5%;
     height: 115%;
-    overflow: auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
     border-radius: 10px;
     box-shadow: -7px 0px 8px 16px rgb(0 0 0 / 35%);
 `

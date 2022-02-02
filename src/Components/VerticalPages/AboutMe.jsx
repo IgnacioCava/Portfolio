@@ -5,7 +5,7 @@ import user from '../Props/anon.png'
 export default function AboutMe(){
 
     return(
-        <MySelf>
+        <MySelf id='myabout'>
             <Contact>
                 <h1>Ignacio Cava</h1>
                 <h5 className="carreer">PERN Stack</h5>

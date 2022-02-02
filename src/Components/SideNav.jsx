@@ -2,17 +2,47 @@ import React from "react"
 import styled from 'styled-components'
 
 export default function SideNav(){
+    const pages = ['About', 'Resumé', 'Projects', 'Contact']
+    const ids = ['about', 'resume', 'projects', 'contact']
 
+    // useEffect(()=>{
+    //     document.getElementById('pages').addEventListener('scroll', ()=>{})
+    // }, [])
+      
     return(
         <Nav>
             <Theme>
                 <button>color</button>
             </Theme>
             <Buttons>
-                <a href="#about">About</a>
-                <a href="#resume">Resumé</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                {pages.map((page,i)=>
+                <button type='button' key={'nav'+i}
+                onClick={()=>{
+                    
+                    //window.location.href=document.getElementById('nav'+i).href
+                    // setTimeout(()=>{
+                    //     window.location.href=document.getElementById('vertical'+i).href
+                    // })
+                    document.getElementById('vertical').scrollTo({
+                        top: document.getElementById('my'+ids[i]).offsetTop,
+                        
+                      })
+                    document.getElementById('pages').scrollTo({
+                        top: document.getElementById(ids[i]).offsetTop,
+                        
+                      })
+                }}>
+                    {page}
+                
+                {/* <a href={'#'+ids[i]} id={'nav'+i}>
+                    {page}
+                </a>
+                <a href={'#my'+ids[i]} id={'vertical'+i}>
+                    {page}
+                </a> */}
+                </button>
+                )}
+                
             </Buttons>
             
         </Nav>
@@ -39,6 +69,11 @@ flex-direction: column;
 justify-content: space-evenly;
 height: 60%;
 width:100%;
+/* a{
+    scroll-behavior: smooth;
+    display: none;
+    visibility: hidden;
+} */
 button{
     background-color:transparent;
     color:white;
@@ -46,7 +81,7 @@ button{
     height: 100%;
     transition:.2s;
     outline: 0;
-    :hover, :focus{
+    :hover, :focus, :active{
         background-color: #4ba676;
     }
 }

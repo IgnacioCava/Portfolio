@@ -2,12 +2,12 @@ import React from "react"
 import styled from 'styled-components'
 import user from '../Props/anon.png'
 
-export default function MyResume(){
+export default function MyProjects(){
 
     return(
-        <MySelf>
+        <MySelf id='myprojects'>
             <Contact>
-                <h1>Ignacio Cava</h1>
+                <h1>MY PROJECTS</h1>
                 <h5 className="carreer">PERN Stack</h5>
                 <h5 className="carreer">Web Developer</h5>
                 <Media>

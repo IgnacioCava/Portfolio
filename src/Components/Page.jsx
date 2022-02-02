@@ -7,9 +7,8 @@ import Resume from "./Pages/Resume"
 
 export default function Page(){
 
-
     return(
-        <CurrentPage>
+        <CurrentPage id='pages'>
                 <About/>
                 <Resume/>
                 <Projects/>
@@ -26,5 +25,8 @@ top:2.5%;
 width:55%;
 height: 95%;
 color:white;
+white-space: break-spaces;
+word-break:break-word;
+scroll-behavior:smooth;
 overflow: auto;
 `
