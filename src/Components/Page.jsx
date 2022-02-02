@@ -8,12 +8,15 @@ import Resume from "./Pages/Resume"
 export default function Page(){
 
     return(
+        <>
+        <ShadowLimiter></ShadowLimiter>
         <CurrentPage id='pages'>
                 <About/>
                 <Resume/>
                 <Projects/>
                 <Contact/>
         </CurrentPage>
+        </>
     )
 }
 
@@ -28,5 +31,23 @@ color:white;
 white-space: break-spaces;
 word-break:break-word;
 scroll-behavior:smooth;
-overflow: auto;
+overflow: hidden;
+>div{
+    padding-top:2%;
+    margin-bottom: 100px;
+}
+`
+
+const ShadowLimiter = styled.div`
+position: absolute;
+right:0;
+top:2%;
+width:55%;
+height: 88%;
+border: 30px solid red;
+border-right: 0;
+border-left: 0;
+border-image: linear-gradient(#1d1e20, transparent, #1d1e20) 100 stretch;
+overflow: hidden;
+z-index: 1;
 `

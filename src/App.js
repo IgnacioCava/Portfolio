@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Holder from './Components/Holder'
 import './App.css';
 

@@ -18,11 +18,6 @@ export default function SideNav(){
                 {pages.map((page,i)=>
                 <button type='button' key={'nav'+i}
                 onClick={()=>{
-                    
-                    //window.location.href=document.getElementById('nav'+i).href
-                    // setTimeout(()=>{
-                    //     window.location.href=document.getElementById('vertical'+i).href
-                    // })
                     document.getElementById('vertical').scrollTo({
                         top: document.getElementById('my'+ids[i]).offsetTop,
                         
@@ -33,13 +28,7 @@ export default function SideNav(){
                       })
                 }}>
                     {page}
-                
-                {/* <a href={'#'+ids[i]} id={'nav'+i}>
-                    {page}
-                </a>
-                <a href={'#my'+ids[i]} id={'vertical'+i}>
-                    {page}
-                </a> */}
+
                 </button>
                 )}
                 
