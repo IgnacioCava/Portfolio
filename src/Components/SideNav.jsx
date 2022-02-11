@@ -4,10 +4,6 @@ import styled from 'styled-components'
 export default function SideNav(){
     const pages = ['About', 'Resumé', 'Projects', 'Contact']
     const ids = ['about', 'resume', 'projects', 'contact']
-
-    // useEffect(()=>{
-    //     document.getElementById('pages').addEventListener('scroll', ()=>{})
-    // }, [])
       
     return(
         <Nav>
@@ -17,15 +13,10 @@ export default function SideNav(){
             <Buttons>
                 {pages.map((page,i)=>
                 <button type='button' key={'nav'+i}
-                onClick={()=>{
-                    document.getElementById('vertical').scrollTo({
-                        top: document.getElementById('my'+ids[i]).offsetTop,
-                        
-                      })
-                    document.getElementById('pages').scrollTo({
-                        top: document.getElementById(ids[i]).offsetTop,
-                        
-                      })
+                    onClick={()=>{
+                        document.getElementById(ids[i]).scrollTop=0
+                        document.getElementById('vertical').scrollTo({top: document.getElementById('my'+ids[i]).offsetTop})
+                        document.getElementById('pages').scrollTo({top: document.getElementById(ids[i]).offsetTop})
                 }}>
                     {page}
 

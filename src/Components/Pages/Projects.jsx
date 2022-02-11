@@ -43,7 +43,9 @@ export default function Projects(){
 }
 
 const ProjectsPage = styled.div`
-    width:90%;
+    /* width:95%;
+    overflow: hidden auto;
+    height: 100%;
     hr{
         border-bottom:0;
         border-right:0;
@@ -54,7 +56,7 @@ const ProjectsPage = styled.div`
     h1{
         font-size: 40px;
         margin-top: 0;
-    }
+    } */
 `
 
 const Abilities = styled.div`

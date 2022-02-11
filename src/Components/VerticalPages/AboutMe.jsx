@@ -1,6 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
 import user from '../Props/anon.png'
+import Li from './Props/LinkedIn.png'
+import Gh from './Props/GitHub.png' 
 
 export default function AboutMe(){
 
@@ -8,17 +10,18 @@ export default function AboutMe(){
         <MySelf id='myabout'>
             <Contact>
                 <h1>Ignacio Cava</h1>
-                <h5 className="carreer">PERN Stack</h5>
+                <h5 className="carreer">Full Stack</h5>
                 <h5 className="carreer">Web Developer</h5>
                 <Media>
-                    <button>
-                        LinkedIn
+                    <button onClick={()=>{
+                        window.open('https://www.linkedin.com/in/ignacio-cava-534269224/', '_black')
+                    }}>
+                        <Icon src={Li} alt='LinkedIn'/>
                     </button>
-                    <button>
-                        Github
-                    </button>
-                    <button>
-                        Gmail
+                    <button onClick={()=>{
+                        window.open('https://github.com/IgnacioCava', '_black')
+                    }}>
+                        <Icon src={Gh} alt='LinkedIn'/>
                     </button>
                 </Media>
             </Contact>
@@ -50,6 +53,7 @@ const Media = styled.div`
         background-color:transparent;
         color:white;
         transition: .3s;
+        cursor: pointer;
         :hover{
             transform: scale(110%);
         }
@@ -70,4 +74,8 @@ const Contact = styled.div`
         color:#4ba676;
         margin:0;
     }
+`
+
+const Icon = styled.img`
+    width: 35px;
 `

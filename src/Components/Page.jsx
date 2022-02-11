@@ -9,7 +9,7 @@ export default function Page(){
 
     return(
         <>
-        <ShadowLimiter></ShadowLimiter>
+        {/* <ShadowLimiter></ShadowLimiter> */}
         <CurrentPage id='pages'>
                 <About/>
                 <Resume/>
@@ -24,17 +24,52 @@ const CurrentPage=styled.div`
 position: absolute;
 text-align: start;
 right:0;
-top:2.5%;
 width:55%;
-height: 95%;
+height: 98%;
+top:1.5%;
 color:white;
 white-space: break-spaces;
 word-break:break-word;
 scroll-behavior:smooth;
 overflow: hidden;
 >div{
-    padding-top:2%;
+    padding-right:1%;
     margin-bottom: 100px;
+
+    height: 99%;
+    width:98%;
+    overflow: hidden auto;
+
+    /* :hover::-webkit-scrollbar{
+        width: 10px;
+    } */
+    
+    ::-webkit-scrollbar{
+        background-color: #2d2f31;
+        width: 5px;
+        border-radius: 10px;
+        overflow: auto;
+    } 
+    ::-webkit-scrollbar-thumb{
+        background-color: #4ba676;
+        border-radius: 10px;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color:#4ba676 transparent;
+
+    hr{
+        border-bottom:0;
+        border-right:0;
+        border-color: #868686;
+        margin: 30px 0 30px 0;
+        width: 100%;
+    }
+    h1{
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
 }
 `
 

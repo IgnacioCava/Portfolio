@@ -1,6 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
 import dev from '../Props/dev.png'
+import db from '../Props/db.png'
+import ui from '../Props/uxui.png'
 
 export default function About(){
     //scrollHeight: 684
@@ -8,33 +10,45 @@ export default function About(){
         <AboutPage id='about'>
             <div>
                 <h1>About me</h1>
-                <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</Text>
+                <Text>
+                    I began my technological journey in highschool, where I learned a bit of C, C++, Assembly and PLC programming with multiple software. It was here that I discovered my love for automation, be it of systematic procedures or solution development
+                </Text>
+
+                <Text>
+                I'm a Javascript lover, web development fan and, overall, a tech enthusiast, everywhere from electronics to programming. Today, I'm learning the ins and outs of the web, always aiming to be a better developer than yesterday
+                </Text>
             </div>
             
             <hr/>
 
             <Abilities>
-                <h2>my abilities</h2>
+                <h2>my skills</h2>
                 <AbIcons>
                     <Ab>
                         <img src={dev} alt='skill'/>
                         Frontend development
-                        <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+                        <Text>
+                            I develop beautiful, scalable, fully responsive applications, always adapted to the user's needs
+                        </Text>
                     </Ab>
                     <Ab>
                         <img src={dev} alt='skill'/>
                         Backend development
-                        <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+                        <Text>
+                            Untangled functionalities that ensure quick feature implementation and readability
+                        </Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={db} alt='skill'/>
                         Database management
-                        <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+                        <Text>
+                            Aimed at reaching the best performance for seamless, lagless usage
+                        </Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
-                        Agile methodologies
-                        <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
+                        <img src={ui} alt='skill'/>
+                        UX / UI
+                        <Text>Designing interactive, easy to use interfaces, ensuring a good user experience in your web pages</Text>
                     </Ab>
                 </AbIcons>
             </Abilities>
@@ -44,7 +58,9 @@ export default function About(){
 }
 
 const AboutPage = styled.div`
-    width:90%;
+    /* height: 100%;
+    width:95%;
+    overflow: hidden auto;
     hr{
         border-bottom:0;
         border-right:0;
@@ -55,11 +71,14 @@ const AboutPage = styled.div`
     h1{
         font-size: 40px;
         margin-top: 0;
-    }
+    } */
 `
 
 const Abilities = styled.div`
 position: relative;
+h2{
+    margin-bottom: 10px;
+}
 `
 
 const AbIcons = styled.div`
@@ -87,4 +106,5 @@ const Text = styled.p`
     color:grey;
     font-size: small;
     line-height: 18px;
+    margin-bottom:0;
 `
