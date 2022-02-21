@@ -1,6 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
 import front from '../Props/frontend.png'
+import CV from '../Props/CV - Ignacio Cava.pdf'
+import download from '../Props/download.png'
 
 export default function Resume(){
 
@@ -8,7 +10,11 @@ export default function Resume(){
     return(
         <ResumePage id='resume'>
             <div>
-                <h1>Resume</h1>
+                <div style={{display:'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                <h1 style={{margin:0}}>Resume</h1>
+                <a href={CV} download style={{width:40, height:40}}><img src={download} alt='cv' style={{width:40, height:40}}/></a>
+
+                </div>
                 <Text>
                     Im a Full Stack Web Developer
                     with an ambition-fueled desire for
@@ -116,6 +122,7 @@ const AcademicRecord = styled.div`
 
 const AllMyResume = styled.div`
 display:flex;
+justify-content: center;
 `
 
 const ResumePage = styled.div`

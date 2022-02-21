@@ -1,72 +1,69 @@
 import React from "react"
 import styled from 'styled-components'
-import user from '../Props/anon.png'
+import Li from './Props/linkedin highres.png'
+import Gh from './Props/GitHub.png' 
+import weatherapp from '../Props/weatherapp.png'
+import foodapp from '../Props/foodapp.png'
 
 export default function MyProjects(){
 
     return(
         <MySelf id='myprojects'>
-            <Contact>
-                <h1>MY PROJECTS</h1>
-                <h5 className="carreer">PERN Stack</h5>
-                <h5 className="carreer">Web Developer</h5>
-                <Media>
-                    <button>
-                        LinkedIn
-                    </button>
-                    <button>
-                        Github
-                    </button>
-                    <button>
-                        Gmail
-                    </button>
-                </Media>
-            </Contact>
+            <div id='weather' onClick={()=>{
+                window.open('https://weathernacho.netlify.app/', '_black')
+            }}>
+                <img src={weatherapp} alt='weatherapp'/>
+                <p>Weather App</p>
+            </div>         
+        
+        
+        
+            <div id='food' onClick={()=>{
+                    window.open('https://foodpi-front.herokuapp.com/', '_black')
+                }}>
+                <img src={foodapp} alt='foodapp'/>
+                <p>Food Recipes App</p>
+            </div>
         </MySelf>
     )
 }
 
 const MySelf = styled.div`
-    position: relative;
     color:white;
     justify-content: center;
     bottom:0;
     height: 100%;
     width:100%;
-    background-image: url(${user});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-`
-
-const Media = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    button{
-        border:0;
-        background-color:transparent;
-        color:white;
-        transition: .3s;
+    >div{
+        height: 50%;
+        cursor:pointer;
+        position: relative;
+        
         :hover{
-            transform: scale(110%);
+            p{
+                opacity:1;
+            }
         }
     }
-`
-
-const Contact = styled.div`
-    position: absolute;
-    bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    //background-image: linear-gradient(transparent, #3f3f3fb5 20% 80%, transparent);
-    h1{
-        margin-top:0;
-    }
-    .carreer{
-        color:#3F59B8;
+    p{
+        transition: .5s ease-in-out;
+        position: absolute;
         margin:0;
+        align-items: center;
+        justify-content: center;
+        background-color: #202020c5;
+        backdrop-filter: blur(2px);
+        opacity:0;
+        top:0;
+        font-size: 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    img{
+        height:100%;
+        width: 100%;
+        object-fit: contain;
+        transition: .5s;
     }
 `

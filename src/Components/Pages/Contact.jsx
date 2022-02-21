@@ -21,7 +21,7 @@ export default function Contact(){
         <ContactPage id='contact'>
             <div>
                 <h1>Contact me</h1>
-                <Text>You can reach me out through LinkedIn, Github, or just send me an email</Text>
+                <Text>You can reach me out through LinkedIn, Github, or just sending me an email</Text>
             </div>
             
             <hr/>

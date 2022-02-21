@@ -5,7 +5,7 @@ export default function SideNav(){
     const pages = ['About', 'Resumé', 'Projects', 'Contact']
     const ids = ['about', 'resume', 'projects', 'contact']
 
-    let lastSide
+    let lastSide='myabout'
 
     window.addEventListener('resize', ()=>{
         let vertial=document.getElementById('vertical')
@@ -18,9 +18,9 @@ export default function SideNav(){
 
     return(
         <Nav>
-            <Theme>
+            {/* <Theme>
                 <button>color</button>
-            </Theme>
+            </Theme> */}
             <Buttons>
                 {pages.map((page,i)=>
                 <button className='nav' type='button' key={'nav'+i}
@@ -64,7 +64,7 @@ const Nav = styled.div`
 position: absolute;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: flex-end;
 height: 100%;
 width:7%;
 `
