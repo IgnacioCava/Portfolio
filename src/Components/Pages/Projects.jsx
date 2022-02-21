@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components'
-import dev from '../Props/dev.png'
+import front from '../Props/frontend.png'
+
 
 export default function Projects(){
 
@@ -17,22 +18,22 @@ export default function Projects(){
                 <h2>my abilities</h2>
                 <AbIcons>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={front} alt='skill'/>
                         Frontend development
                         <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={front} alt='skill'/>
                         Backend development
                         <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={front} alt='skill'/>
                         Database management
                         <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={front} alt='skill'/>
                         Agile methodologies
                         <Text>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</Text>
                     </Ab>

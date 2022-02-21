@@ -33,7 +33,6 @@ const MySelf = styled.div`
     bottom:0;
     height: 100%;
     width:100%;
-    background-color: #2e2e2e;
     background-image: url(${user});
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +66,7 @@ const Contact = styled.div`
         margin-top:0;
     }
     .carreer{
-        color:#4ba676;
+        color:#3F59B8;
         margin:0;
     }
 `

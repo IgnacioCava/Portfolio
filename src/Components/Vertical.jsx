@@ -25,6 +25,8 @@ const VerticalScale = styled.div`
     height: 115%;
     overflow: hidden;
     scroll-behavior: smooth;
+    background-color: #202020;
+    overflow:hidden;
     border-radius: 10px;
     box-shadow: -7px 0px 8px 16px rgb(0 0 0 / 35%);
     z-index: 1;

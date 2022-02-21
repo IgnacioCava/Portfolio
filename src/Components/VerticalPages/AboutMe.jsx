@@ -10,7 +10,7 @@ export default function AboutMe(){
         <MySelf id='myabout'>
             <Contact>
                 <h1>Ignacio Cava</h1>
-                <h5 className="carreer">Full Stack</h5>
+                <h5 className="carreer">Jr. Full Stack</h5>
                 <h5 className="carreer">Web Developer</h5>
                 <Media>
                     <button onClick={()=>{
@@ -36,7 +36,6 @@ const MySelf = styled.div`
     bottom:0;
     height: 100%;
     width:100%;
-    background-color: #2e2e2e;
     background-image: url(${user});
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +70,7 @@ const Contact = styled.div`
         margin-top:0;
     }
     .carreer{
-        color:#4ba676;
+        color:#3F59B8;
         margin:0;
     }
 `

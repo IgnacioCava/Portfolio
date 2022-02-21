@@ -32,6 +32,7 @@ white-space: break-spaces;
 word-break:break-word;
 scroll-behavior:smooth;
 overflow: hidden;
+color:#86a1ff;
 >div{
     padding-right:1%;
     margin-bottom: 100px;
@@ -51,19 +52,18 @@ overflow: hidden;
         overflow: auto;
     } 
     ::-webkit-scrollbar-thumb{
-        background-color: #4ba676;
+        background-color: #3F59B8;
         border-radius: 10px;
     }
 
     scrollbar-width: thin;
-    scrollbar-color:#4ba676 transparent;
+    scrollbar-color:#3F59B8 transparent;
 
     hr{
         border-bottom:0;
         border-right:0;
         border-color: #868686;
         margin: 30px 0 30px 0;
-        width: 100%;
     }
     h1{
         font-size: 40px;

@@ -1,7 +1,8 @@
 import React from "react"
 import styled from 'styled-components'
-import dev from '../Props/dev.png'
-import db from '../Props/db.png'
+import front from '../Props/frontend.png'
+import back from '../Props/backend.png'
+import db from '../Props/database.png'
 import ui from '../Props/uxui.png'
 
 export default function About(){
@@ -25,21 +26,21 @@ export default function About(){
                 <h2>my skills</h2>
                 <AbIcons>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={front} alt='skill'/>
                         Frontend development
                         <Text>
                             I develop beautiful, scalable, fully responsive applications, always adapted to the user's needs
                         </Text>
                     </Ab>
                     <Ab>
-                        <img src={dev} alt='skill'/>
+                        <img src={back} alt='skill'/>
                         Backend development
                         <Text>
-                            Untangled functionalities that ensure quick feature implementation and readability
+                            Untangled coding to ensures quick feature implementation and readability
                         </Text>
                     </Ab>
                     <Ab>
-                        <img src={db} alt='skill'/>
+                        <img src={db} alt='skill' style={{width:100}}/>
                         Database management
                         <Text>
                             Aimed at reaching the best performance for seamless, lagless usage
@@ -77,7 +78,7 @@ const AboutPage = styled.div`
 const Abilities = styled.div`
 position: relative;
 h2{
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 `
 
